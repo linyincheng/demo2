@@ -1,0 +1,100 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.wrap{
+	width: 1600px;
+	height: 100%;
+	background:-moz-linear-gradient(top, #FFFFFF, #f8f8f8);
+	background:-webkit-linear-gradient(top, #FFFFFF, #f8f8f8);
+	background:-ms-linear-gradient(top, #FFFFFF, #f8f8f8);
+	background:linear-gradient(top, #FFFFFF, #f8f8f8);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FFFFFF, endColorstr=#f8f8f8)";
+	+background:#f9f9f9;
+}
+.logo{
+	width:223px; 
+	height:62px;
+	margin-top: 20px;
+	margin-left:100px ;
+	padding-bottom: 10px;
+}
+.wrap_bg{
+	position: relative;
+	width: 1600px;
+	height: 600px;
+	background: url(../img/login_bg.jpg) no-repeat center center;
+}
+.wrap_form{
+	position: absolute;
+	right: 250px;
+	top: 100px;
+	width: 300px;
+	height: 350px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: #ebe6e6;
+}
+.wrap_form h3{
+	margin-top: 20px;
+	font-size: 18px;
+	font-weight: 100;
+	font-family: "microsoft yahei";
+}
+form input{
+	width: 252px;
+	height: 38px;
+	padding-left: 50px;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	font-family: arial "microsoft yahei";
+	font-size: 18px;
+	font-weight: normal;
+	color: #333;
+	background:url(../img/loginIcon.png) no-repeat ;
+	
+}
+#username{
+	background-position:-2px 0px ;
+}
+#passwrod{
+	background-position: -2px -62px;
+}
+form a{
+	display: inline-block;
+	width: 303px;
+	height: 43px;
+	text-align: center;
+	line-height: 43px;
+	margin-bottom: 20px;
+	background-color: #f10;
+	font-family: arial;
+	font-size:18px ;
+	font-weight: bold;
+	color: #fff;
+	border: 1px solid #f10;
+	border-radius:5px ;
+	cursor: pointer;
+}
+form a:hover{
+	background-color: #f40;
+}
+span{
+	position: absolute;
+	right: 33px;
+	bottom: 10px;
+}
+span a{
+	text-decoration: none;
+	margin-left: 10px;
+	color: #666;
+	font-family: "arial black" "microsoft yahei";
+	font-size:14px ; 
+}
+span a:hover{
+	color: #f40;
+	text-decoration: underline;
+}

@@ -1,0 +1,151 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.clear { zoom:1; }
+.clear:after {
+	 content:''; 
+	 display:block; 
+	 clear:both; 
+	 }
+.mian{
+	width:1600px;
+	height: 100%;
+	background:-moz-linear-gradient(top, #FFFFFF, #f8f8f8);
+	background:-webkit-linear-gradient(top, #FFFFFF, #f8f8f8);
+	background:-ms-linear-gradient(top, #FFFFFF, #f8f8f8);
+	background:linear-gradient(top, #FFFFFF, #f8f8f8);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FFFFFF, endColorstr=#f8f8f8)";
+	+background:#f9f9f9;
+}
+.header{
+	width: 1600px;
+	height: 62px;
+}
+.logo{
+	width:223px; 
+	height:62px;
+	margin-top: 20px;
+	margin-left:100px ;
+	padding-bottom: 10px;
+}
+.header_nav{
+	position: relative;
+}
+.header_nav ul{
+	position: absolute;
+	right: 100px;
+	top: -30px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 600px;
+}
+.header ul li{
+	float: left;
+	color: #999;
+}
+.header_nav ul a{
+	margin:0 15px;
+	text-decoration: none;
+	color: #999;
+}
+.header_nav ul a:hover{
+	color: #f40;
+	text-decoration: underline;
+}
+.wrap{
+	position:relative;
+	width: 1600px;
+	height: 600px;
+	margin-top: 20px;
+	background: url(../img/sign_bg.jpg) no-repeat center center;
+}
+.wrap_form{
+	position: absolute;
+    top: 50px;
+    left: 200px;
+	width: 600px;
+	height: 450px;
+	/*padding-top: 25px;*/
+	padding-left: 25px;
+}
+.wrap_form{
+	color: #fff;
+	font-family: "microsoft yahei";
+	font-size: 20px;
+	font-weight: normal;
+}
+input{
+	float: right;
+	width: 280px;
+	height: 30px;
+	margin-bottom: 20px;
+	margin-right: 210px;
+	padding-left: 20px;
+	font-family: arial "microsoft yahei";
+	font-size:16px ;
+}
+label{
+	display: inline-block;
+	height: 30px;
+	font-family: arial "microsoft yahei";
+	font-size:18px; 
+	line-height: 30px;
+	padding-bottom: 30px;
+	color: #fff;
+}
+.wrap_form #submit{
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 10px 100px;
+	background-color: #E21C01;
+	border:#f10 1px solid ;
+	color: #fff;
+	font-family: "microsoft yahei";
+	font-size: 18px;
+	cursor: pointer;
+}
+.wrap_form #submit:hover{
+	background-color: #F40;
+}
+#passBox{
+	bottom: 160px;
+}
+#passBox span{
+	text-align: center;
+	line-height: 30px;
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	background: #C0C0C0;
+	border-right: 1px solid #666;
+}
+.box{
+	width: 200px;
+	height: 30px;
+	position: absolute;
+	right: 0px;
+	line-height: 30px;
+	text-align: center;
+	font-family: "microsoft yahei";
+	font-size:16px ;
+}
+#tel_box{
+	top: 80px;
+}
+#userBox{
+	top: 140px;
+}
+#emailBox{
+	top: 200px;
+}
+#psdBox{
+	bottom: 100px;
+}
