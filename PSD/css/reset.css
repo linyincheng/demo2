@@ -1,0 +1,27 @@
+h1, h2,h3,h4,h5,h6,p,a,b,i,ul,li,dl,ol,select,option,input,textarea,{
+	padding: 0;
+	margin: 0;
+}
+html body{
+	font-family: arial,"microsoft yahei";\
+	margin: 0;padding: 0;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+ul li{
+	list-style: none;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+}
+.clearfix{
+	display: inline-table;
+}
+img{
+	border: none;
+}
