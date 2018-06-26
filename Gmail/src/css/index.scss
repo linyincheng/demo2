@@ -1,0 +1,288 @@
+@import "reset";
+
+/*整个网页的样式表*/
+.main{
+    width: $width;
+    //头部导航和logo的样式
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: $height;
+        box-shadow:0 2px 2px rgba(0,0,0,.2);
+        background-color: #fff;
+        z-index: 9;
+        .header_logo{
+            width: 150px;
+            height: 43px;
+            
+            background: url("../images/sprite.png") no-repeat 25px 20px;  
+        }
+        .header_nav{
+            position: absolute;
+            right: 0px;
+            margin-top: -43px;
+            
+            .header_nav_list{
+                cursor: pointer;
+                float: left;
+                width: 120px;
+                height: $height;
+                
+                @include auto;
+                a{
+                    font-size:14px;
+                    color: #333;
+                    &:hover{
+                        color: #dd5347;
+                    }
+                }
+            }
+            .header_nav_create{
+                float: right;
+                @include btn;
+            }
+            
+        }
+    }
+
+    //中间部分样式
+    section{
+        margin-top: $height;
+        .section_wrap{
+            width: $width;
+            height: 678px;
+            background: url(../images/home-hero_2x.jpg) no-repeat 50% 70%;
+            background-size:cover;
+           .header_nav_create{
+            @include btn;
+           } 
+        }
+        .section_box{
+            margin-left: 142px;
+            padding-top: 100px;
+            h1{
+                width: 36%;
+                color: #fff;
+                font-size: 48px;
+                font-weight: 100;
+                line-height: 62px;
+            }
+            
+        }
+    }
+    //右下角元按钮的样式
+    .scroll_dot{
+        cursor: pointer;
+        position:fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height:60px;
+        border-radius: 50%;
+        background-color: rgb(221, 83, 71);
+        box-shadow:rgba(0,0,0,0.9) 0px 14px 58px -7px;
+        z-index: 9;
+        .scroll_dot_text{
+            color: #fff;
+            text-align:center;
+            display: inline-block;
+            width: 6px ;
+            height: 6px;
+            border:{
+                right: 3px solid #fff;
+                bottom:3px solid #fff;
+            }
+            margin:22px 23px;
+            padding:2px;
+            
+
+        }
+        .source{
+            transform: rotate(45deg);
+        }
+        .rotate{
+            transform: rotate(-135deg);
+        }
+        
+    }
+    .section_wrap2{
+        width:$width;
+        height: 631px;
+        .section_wrap2_inbox{
+            margin-top: 160px;
+            .section_wrap2_text{
+                margin-top: 40px;
+            }
+        }
+        .section_wrap2_image{
+            margin-top: 70px;
+            img{
+                width: $width;
+            }
+        }
+    }
+    .section_wrap4{
+        width: $width;
+        padding-top: 64px;
+        .section_wrap4_h2{
+           margin-top: -120px;
+        }
+        .geogle{
+            margin-left: 600px;
+
+        }
+        .btn{
+            img{
+                float: left;
+                width: 180px;
+                height: 50px;
+            }
+            
+        }
+        .section_wrap4_bgimage{
+            img{
+                 width: $width;
+            }
+        }
+    }
+    .section_wrap5{
+        position:relative;
+        margin:100px 0;
+        background-color: #f9f9f9;
+        padding-top:64px;
+        .text{
+            padding:0 150px;
+            float: left;
+            display: inline;
+            .section_wrap5_h2 ,p {
+                max-width: 350px;
+                text-align: left;
+            }
+
+        }
+        .section_wrap5_image{
+            img{
+                width: 600px;
+                height: 360px
+            }
+        }
+    }
+    .section_wrap6{
+        padding-top:64px;
+        .section_wrap6_text{
+            padding-bottom:50px;
+        }
+        .section_wrap6_slider{
+            box-shadow: 0 0 23px rgba(0,0,0,0.25);
+            margin: 55px auto 175px;
+            max-width: 940px;
+            padding: 8px;
+            height: 570px;
+            img{
+                width: 940px;
+                height: 100%;
+                z-index: -1;
+            }
+            .slider_inner{
+               position:relative;
+                li{
+                    position:absolute;
+                    opacity: 0;
+                    transition: opacity 1s ease-out;
+
+                }
+                .op_in{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .section_wrap7{
+        padding-top: 64px;
+        .wrap7_box{
+            background-color: #f9f9f9;
+            display: block;
+            margin: 0 0 100px;
+            padding: 60px 0 0;
+            width: $width;
+            .section_wrap7_text{
+                padding-bottom: 40px
+            }
+            .section_wrap7_bgimage{
+                margin:0 auto;
+                width: 60%;
+                img{
+                width: 100%;
+            }
+            }
+        }
+    }
+    .section_wrap8{
+        position: relative;
+        padding-top:64px;
+           background: url(../images/bettercompose_2x.jpg) no-repeat 35% 50%;
+           background-size:contain;
+           width: $width;
+           height: 500px;
+
+        .wrap8_box{
+            float: left;
+            padding:120px 0 0 1050px;
+            max-width: 400px;
+            h2,p{
+                text-align: left;
+            }
+            h2{
+                padding-bottom: 10px;
+            }
+        }
+
+    }
+    .section_wrap9{
+        padding-top:64px;
+        .wrap9_box{
+            width: $width;
+            height: 630px;
+            padding-top: 100px;
+            background-color:#f9f9f9;
+            .section_wrap9_text{
+               b{
+                font-weight: normal;
+                color: #4a90e2;
+                display: inline;
+                text-decoration: none;
+               }
+               // padding-bottom:30px;
+            }
+            .section_wrap9_read{
+               a{
+                display: block;
+                color: #dd5347;
+                width:100px;
+                height: 30px;
+                font:{
+                    size:12px;
+                    weight:600;
+                }
+                padding: 24px 0 42px;
+                margin:0 auto;
+               }
+            }
+            .button{
+                width: 220px;
+                height: 48px;
+                line-height: 48px;
+                text-align: center;
+                margin:-20px  auto 0;
+                background-color: #dd5347;
+               a{
+                 color: #fff;
+               }
+
+            }
+        }
+    }
+
+}

@@ -1,0 +1,62 @@
+@mixin resets{
+    margin:0;
+    padding:0;
+}
+//文本居中
+@mixin auto{
+    text-align: center;
+    line-height: $height;
+}
+@mixin btn{
+    width: 240px;
+    height: $height;
+    @include auto;
+    background-color: #dd5347;
+    cursor: pointer;
+    a{
+        font-size:14px;
+        color: #fff;
+    }
+}
+$width:100%;
+$height:65px;
+/*初始化*/
+html,body{
+    width: $width;
+    height: $width;   
+    @include resets;
+    
+}
+html{
+    body{
+        font-family: "Roboto","Helvetica",arial;
+        ul{
+        list-style:none;
+        @include resets;
+    }
+    a{
+        text-decoration: none;
+    }
+    }
+}
+.main{
+    h2{
+        font:{
+            size:40px;
+            weight:100;
+        }
+        line-height: 40px;
+        color: #333;
+       text-align: center;
+    }
+    p{
+        height: 14px;
+        line-height: 14px;
+        text-align: center;
+        color: #333;
+        font:{
+            size:16px;
+            weight:100;
+        }
+    }
+}
